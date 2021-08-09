@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TentangAplikasi">
+    
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/icon"
+        android:layout_centerInParent="true"
+        android:id="@+id/logo"/>
+
+    <TextView
+        android:id="@+id/judulAplikasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi Pengenalan Bahasa Jepang"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@id/logo"
+        android:padding="8dp"
+        android:layout_centerInParent="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/garis"
+        android:background="@color/darkerGrey"
+        android:layout_below="@id/judulAplikasi"/>
+    
+    <LinearLayout
+        android:layout_below="@id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:drawableStart="@drawable/ic_facebook"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:text="Rahmat Alfazri"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:drawableStart="@drawable/ic_telegram"
+            android:drawableLeft="@drawable/ic_telegram"
+            android:text="Rahmat Alfazri"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:drawableStart="@drawable/ic_instagram"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:text="rahmatalfazri19"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
